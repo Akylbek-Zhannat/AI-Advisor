@@ -12,7 +12,7 @@ function AdvicePage() {
     setError('');
     try {
       const res = await fetch('https://api.adviceslip.com/advice');
-      if (!res.ok) throw new Error('Сеть не отвечает');
+      if (!res.ok) throw new Error('The network is not responding');
       const data = await res.json();
       setAdvice(data.slip);
     } catch (e) {
@@ -34,15 +34,15 @@ function AdvicePage() {
 
   return (
     <div className="container">
-      <h1 className="title"><FaLightbulb /> Совет дня</h1>
+      <h1 className="title"><FaLightbulb /> Advice of the day</h1>
       {loading && <div className="spinner" />}
       {error && <div className="error">{error}</div>}
       {advice && !loading && (
         <div className="card">
           <div className="advice-text">“{advice.advice}”</div>
           <div className="actions">
-            <button onClick={fetchAdvice} className="btn primary"><FaSyncAlt /> Еще</button>
-            <button onClick={addFavorite} className="btn accent"><FaHeart /> В избранное</button>
+            <button onClick={fetchAdvice} className="btn primary"><FaSyncAlt /> New</button>
+            <button onClick={addFavorite} className="btn accent"><FaHeart /> To Favorites</button>
           </div>
         </div>
       )}
@@ -61,13 +61,13 @@ function FavoritesPage() {
 
   return (
     <div className="container">
-      <h1 className="title"><FaHeart /> Избранное</h1>
+      <h1 className="title"><FaHeart /> Favorites</h1>
       {!favorites.length
-        ? <div className="empty">Нет сохранённых советов.</div>
+        ? <div className="empty">There are no saved tips.</div>
         : favorites.map(item => (
           <div key={item.id} className="card fav">
             <div className="advice-text">“{item.advice}”</div>
-            <button onClick={() => removeFav(item.id)} className="btn remove">Удалить</button>
+            <button onClick={() => removeFav(item.id)} className="btn remove">Delete</button>
           </div>
         ))
       }
@@ -79,8 +79,8 @@ export default function App() {
   return (
     <>
       <nav className="nav">
-        <NavLink to="/" end>Совет дня</NavLink>
-        <NavLink to="/favorites">Избранное</NavLink>
+        <NavLink to="/" end>Advice of the day</NavLink>
+        <NavLink to="/favorites">Favorites</NavLink>
       </nav>
       <Routes>
         <Route path="/" element={<AdvicePage />} />
