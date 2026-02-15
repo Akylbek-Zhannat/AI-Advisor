@@ -6,69 +6,42 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 An interactive web application that generates motivational and practical advice using AI.
 
-The application allows users to:
+## The application allows users to:
+    View dynamically generated daily advice
+    Add advice to favorites
+    Revisit saved quotes
+    Experience smooth animated background color transitions
+    Enjoy a clean and minimal modern UI
 
-View dynamically generated daily advice
+## ✨ Features
+    AI-powered advice generation
+    Favorites system with state management
+    Dynamic UI updates
+    Smooth animated gradient background
+    Responsive design
+    Loading state animation
+    Tab-based navigation (Daily / Favorites)
 
-Add advice to favorites
+## 🛠 Tech Stack
+    React (JSX)
+    Modern CSS (gradients, shadows, animations)
+    Local state management
+    Component-based architecture
 
-Revisit saved quotes
+## 🎯 Project Purpose
+    This project demonstrates:
+    Frontend state management
+    UI/UX design skills
+    Interactive component logic
+    Dynamic styling and animation
+    Clean component structure
 
-Experience smooth animated background color transitions
-
-Enjoy a clean and minimal modern UI
-
-✨ Features
-
-AI-powered advice generation
-
-Favorites system with state management
-
-Dynamic UI updates
-
-Smooth animated gradient background
-
-Responsive design
-
-Loading state animation
-
-Tab-based navigation (Daily / Favorites)
-
-🛠 Tech Stack
-
-React (JSX)
-
-Modern CSS (gradients, shadows, animations)
-
-Local state management
-
-Component-based architecture
-
-🎯 Project Purpose
-
-This project demonstrates:
-
-Frontend state management
-
-UI/UX design skills
-
-Interactive component logic
-
-Dynamic styling and animation
-
-Clean component structure
-
-🚀 Future Improvements
-
-Backend integration
-
-Persistent database storage
-
-User authentication
-
-Dark/Light mode toggle
-
-AI personalization
+## 🚀 Future Improvements
+    Backend integration
+    Persistent database storage
+    User authentication
+    Dark/Light mode toggle
+    AI personalization
 
 ## Available Scripts
 
